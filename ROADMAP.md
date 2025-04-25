@@ -1,8 +1,8 @@
 # RealEstate SaaS – Roadmap
 
 ## Phase 1: MVP
-- [ ] Project scaffolding + repo setup
-- [ ] Obsidian vault for design + trace planning
+- [x] Project scaffolding + repo setup
+- [x] Obsidian vault for design + trace planning
 - [ ] Featured listings mock (React + animated scroll)
 - [ ] Mortgage calculator (with export)
 - [ ] JSON server backend with listings + calc config

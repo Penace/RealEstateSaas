@@ -1,8 +1,20 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Listings from "./pages/Listings";
+import Calculator from "./pages/Calculator";
+
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center text-2xl font-bold">
-      RealEstate SaaS - Coming Soon
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/listings" element={<Listings />} />
+        <Route path="/calculator" element={<Calculator />} />
+      </Routes>
+    </Router>
   );
 }
 

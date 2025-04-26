@@ -15,7 +15,7 @@ export default function Home() {
       heroSection.style.transform = `scale(${scaleAmount})`;
 
       // Parallax background motion
-      const parallaxSpeed = 1.33; // Lower = slower background move
+      const parallaxSpeed = 0.33; // Lower = slower background move
       heroSection.style.backgroundPositionY = `${scrollTop * parallaxSpeed}px`;
 
       const rect = infoSection.getBoundingClientRect();

@@ -131,6 +131,7 @@ export default function Home() {
       <div id="listings">
         <PropertyShowcase
           image={house1}
+          url="/listings/modernluxuryvilla"
           title="Modern Luxury Villa"
           description="5 bedrooms · Private Pool · Panoramic Views"
         />

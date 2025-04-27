@@ -17,16 +17,13 @@ export default function PropertyShowcase({
       if (rect.top < windowHeight && rect.bottom > 0) {
         const scrollProgress =
           1 - Math.min(Math.max(rect.top / windowHeight, 0), 1);
-        const yMovement = (1 - scrollProgress) * 30;
 
         showcase.style.opacity = scrollProgress;
-        showcase.style.transform = `translateY(${yMovement}px)`;
 
         const backgroundShift = scrollProgress * parallaxStrength;
         showcase.style.backgroundPositionY = `${50 - backgroundShift}%`;
       } else {
         showcase.style.opacity = 0.05;
-        showcase.style.transform = "translateY(30px)";
         showcase.style.backgroundPositionY = "50%";
       }
     };

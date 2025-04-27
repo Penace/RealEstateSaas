@@ -17,8 +17,7 @@ export default function PropertyShowcase({
       if (rect.top < windowHeight && rect.bottom > 0) {
         const scrollProgress =
           1 - Math.min(Math.max(rect.top / windowHeight, 0), 1);
-
-        const yMovement = (1 - scrollProgress) * 30; // Smoother upward lift
+        const yMovement = (1 - scrollProgress) * 30;
 
         showcase.style.opacity = scrollProgress;
         showcase.style.transform = `translateY(${yMovement}px)`;
@@ -26,7 +25,7 @@ export default function PropertyShowcase({
         const backgroundShift = scrollProgress * parallaxStrength;
         showcase.style.backgroundPositionY = `${50 - backgroundShift}%`;
       } else {
-        showcase.style.opacity = 0;
+        showcase.style.opacity = 0.05;
         showcase.style.transform = "translateY(30px)";
         showcase.style.backgroundPositionY = "50%";
       }
@@ -47,7 +46,7 @@ export default function PropertyShowcase({
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="bg-black/50 p-8 rounded-xl text-center shadow-lg backdrop-blur-sm">
+      <div className="bg-black/50 p-8 rounded-xl text-center shadow-lg backdrop-blur-sm transition-transform duration-300 hover:scale-105">
         <h2 className="text-4xl font-bold text-white">{title}</h2>
         <p className="text-lg text-gray-200 mt-4">{description}</p>
       </div>

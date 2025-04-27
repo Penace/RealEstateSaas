@@ -2,19 +2,22 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-between px-6 py-4 shadow-md bg-white dark:bg-gray-900">
-      <div className="text-2xl font-bold text-gray-800 dark:text-white">
+    <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50 p-4 flex justify-between items-center">
+      <Link to="/" className="text-xl font-bold text-blue-600">
         RealEstateSaaS
-      </div>
-      <div className="flex gap-6 text-gray-600 dark:text-gray-300 text-lg">
-        <Link to="/" className="hover:text-blue-500">
+      </Link>
+      <div className="space-x-6">
+        <Link
+          to="/"
+          className="text-gray-600 hover:text-blue-600 transition-all"
+        >
           Home
         </Link>
-        <Link to="/listings" className="hover:text-blue-500">
+        <Link
+          to="/listings"
+          className="text-gray-600 hover:text-blue-600 transition-all"
+        >
           Listings
-        </Link>
-        <Link to="/calculator" className="hover:text-blue-500">
-          Calculator
         </Link>
       </div>
     </nav>

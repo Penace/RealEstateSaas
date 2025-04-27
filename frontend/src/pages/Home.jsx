@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import PropertyShowcase from "../components/PropertyShowcase";
 import FeatureCard from "../components/FeatureCard";
 import house1 from "/src/assets/house1.jpg";
@@ -81,12 +82,12 @@ export default function Home() {
         >
           Find Your Dream Property
         </h1>
-        <a
-          href="/listings"
+        <Link
+          to="/listings"
           className="mt-6 text-white bg-blue-600 hover:bg-blue-500 px-6 py-3 rounded-lg text-lg font-semibold transition-all duration-300"
         >
           Browse Listings
-        </a>
+        </Link>
       </section>
 
       {/* Info Section */}
@@ -131,7 +132,6 @@ export default function Home() {
       <div id="listings">
         <PropertyShowcase
           image={house1}
-          url="/listings/modernluxuryvilla"
           title="Modern Luxury Villa"
           description="5 bedrooms · Private Pool · Panoramic Views"
         />
@@ -152,11 +152,12 @@ export default function Home() {
         id="ctaSection"
         className="h-64 bg-gray-900 flex items-center justify-center overflow-hidden opacity-0 transition-all duration-700"
       >
-        <a href="/listing">
-          <button className="px-8 py-4 text-white bg-blue-600 hover:bg-blue-500 rounded-xl text-2xl shadow-lg transition-all duration-300 ease-out">
-            Start Your Journey
-          </button>
-        </a>
+        <Link
+          to="/listings"
+          className="px-8 py-4 text-white bg-blue-600 hover:bg-blue-500 rounded-xl text-2xl shadow-lg transition-all duration-300 ease-out"
+        >
+          Start Your Journey
+        </Link>
       </section>
 
       {/* Footer Placeholder */}

@@ -128,23 +128,31 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Properties */}
-      <div id="listings">
-        <PropertyShowcase
-          image={house1}
-          title="Modern Luxury Villa"
-          description="5 bedrooms · Private Pool · Panoramic Views"
-        />
-        <PropertyShowcase
-          image={house2}
-          title="Tuscan Mansion"
-          description="7 bedrooms · Historic Charm · Exclusive Location"
-        />
-        <PropertyShowcase
-          image={house3}
-          title="Penthouse Apartment"
-          description="3 bedrooms · Rooftop Terrace · City Skyline"
-        />
+      {/* Properties Section */}
+      <div id="listings" className="space-y-12">
+        <Link to="/listings/1">
+          <PropertyShowcase
+            image={house1}
+            title="Modern Luxury Villa"
+            description="5 bedrooms · Private Pool · Panoramic Views"
+          />
+        </Link>
+
+        <Link to="/listings/2">
+          <PropertyShowcase
+            image={house2}
+            title="Tuscan Mansion"
+            description="7 bedrooms · Historic Charm · Exclusive Location"
+          />
+        </Link>
+
+        <Link to="/listings/3">
+          <PropertyShowcase
+            image={house3}
+            title="Penthouse Apartment"
+            description="3 bedrooms · Rooftop Terrace · City Skyline"
+          />
+        </Link>
       </div>
 
       {/* CTA Section */}

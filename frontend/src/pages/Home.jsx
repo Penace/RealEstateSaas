@@ -82,7 +82,7 @@ export default function Home() {
           Find Your Dream Property
         </h1>
         <a
-          href="#listings"
+          href="/listings"
           className="mt-6 text-white bg-blue-600 hover:bg-blue-500 px-6 py-3 rounded-lg text-lg font-semibold transition-all duration-300"
         >
           Browse Listings
@@ -151,9 +151,11 @@ export default function Home() {
         id="ctaSection"
         className="h-64 bg-gray-900 flex items-center justify-center overflow-hidden opacity-0 transition-all duration-700"
       >
-        <button className="px-8 py-4 text-white bg-blue-600 hover:bg-blue-500 rounded-xl text-2xl shadow-lg transition-all duration-300 ease-out">
-          Start Your Journey
-        </button>
+        <a href="/listing">
+          <button className="px-8 py-4 text-white bg-blue-600 hover:bg-blue-500 rounded-xl text-2xl shadow-lg transition-all duration-300 ease-out">
+            Start Your Journey
+          </button>
+        </a>
       </section>
 
       {/* Footer Placeholder */}

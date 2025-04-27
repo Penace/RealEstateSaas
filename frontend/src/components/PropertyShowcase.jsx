@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 
 export default function PropertyShowcase({
   image,
+  url,
   title,
   description,
   parallaxStrength = 60,
@@ -43,10 +44,12 @@ export default function PropertyShowcase({
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="bg-black/50 p-8 rounded-xl text-center shadow-lg backdrop-blur-sm transition-transform duration-300 hover:scale-105">
-        <h2 className="text-4xl font-bold text-white">{title}</h2>
-        <p className="text-lg text-gray-200 mt-4">{description}</p>
-      </div>
+      <a href={url}>
+        <div className="bg-black/50 p-8 rounded-xl text-center shadow-lg backdrop-blur-sm transition-transform duration-300 hover:scale-105">
+          <h2 className="text-4xl font-bold text-white">{title}</h2>
+          <p className="text-lg text-gray-200 mt-4">{description}</p>
+        </div>
+      </a>
     </section>
   );
 }

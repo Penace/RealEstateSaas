@@ -17,7 +17,7 @@ status: active
 ### Home / Landing Page
 - [x] Create Hero Section (full-screen image + text overlay)
 - [x] Implement Animated Scroll Effects (zoom, parallax)
-- [ ] Build Featured Listings Section (top 5 properties)
+- [x] Build Featured Listings Section (top 5 properties)
 
 ### Listings Page
 - [ ] Create All Listings Grid (property cards)

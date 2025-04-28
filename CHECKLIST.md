@@ -20,9 +20,9 @@ status: active
 - [x] Build Featured Listings Section (top 5 properties)
 
 ### Listings Page
-- [ ] Create All Listings Grid (property cards)
+- [x] Create All Listings Grid (property cards)
 - [ ] Add Filter/Search Bar (basic keyword filtering)
-- [ ] Listing Card Component (price, image, location)
+- [x] Listing Card Component (price, image, location)
 
 ### Property Detail Page
 - [ ] Property Image Carousel
